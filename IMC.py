@@ -11,6 +11,12 @@ while True:
         if 10 <= peso <= 300:
             break
     print("¡Error! Ingrese un peso válido")
+while True:
+    altura = input("Ingrese su altura en metros: ")
+        altura = float(altura)
+        if 0.5 <= altura <= 2.5:
+            break
+    print("¡Error! Ingrese una altura válida")
 
 
 

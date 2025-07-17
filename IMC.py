@@ -39,5 +39,3 @@ elif edad > 65:
          print("Obesidad")
 
 
-
-

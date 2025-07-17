@@ -1,41 +1,24 @@
-print("Bienvenido al Sistema de Evaluación de Indice de Masa Corporal")
-edad = int(input("Ingrese su edad: "))
-peso = float(input("Ingrese su peso en kilos: "))
-altura = float(input("Ingrese su altura en metros: "))
-imc = peso / (altura * altura)
+print("Bienvenido al Sistema de evaluación de IMC")
+while True:
+    edad = input("Ingrese su edad (2-110 años): ")
+        edad = int(edad)
+        if 2 <= edad <= 110:
+            break
+    print("¡Error! Ingrese solo números entre 2 y 110")
+while True:
+    peso = input("Ingrese su peso: ")
+        peso = float(peso)
+        if 10 <= peso <= 300:
+            break
+    print("¡Error! Ingrese un peso válido")
+while True:
+    altura = input("Ingrese su altura en metros: ")
+        altura = float(altura)
+        if 0.5 <= altura <= 2.5:
+            break
+    print("¡Error! Ingrese una altura válida")
 
-if (edad < 2):
-    print("No se puede evaluar")
-    print(f"Su Indice de Masa Corporal es: {imc}")
 
-if 2 <= edad <= 19:
-    if imc < 5:
-       print("Bajo peso")
-    elif 5 <= imc <= 85:
-        print("Peso saludable")
-    elif 85 < imc <= 95:
-        print("Sobrepeso")
-    elif imc > 95:
-        print("Obesidad")
 
-elif 20 <= edad <= 65:
-    if imc < 19:
-        print("Bajo peso")
-    elif 19 <= imc <= 25:
-        print("Peso saludable")
-    elif 25 < imc <= 30:
-        print("Sobrepeso")
-    elif imc > 30:
-        print("Obesidad")
-
-elif edad > 65:
-    if imc < 22:
-        print("Bajo peso")
-    elif 22 <= imc <= 27:
-        print("Peso saludable")
-    elif 27 < imc <= 30:
-        print("Sobrepeso")
-    elif imc > 30:
-         print("Obesidad")
 
 
